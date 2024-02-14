@@ -49,6 +49,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>devops-jen-doc</finalName>
 	</build>
 
 </project>
