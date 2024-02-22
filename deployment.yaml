@@ -17,7 +17,7 @@ template:
         image: karthickkumar678/devops-jen-doc
         imagePullPolicy: IfNorPresent
         ports:
-          - containerPort: 84444
+          - containerPort: 8444
 
 ---
 
