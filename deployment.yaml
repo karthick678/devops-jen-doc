@@ -17,22 +17,22 @@ template:
         image: karthickkumar678/devops-jen-doc
         imagePullPolicy: IfNorPresent
         ports:
-          - containerPort: 8080
-#
-#---
-#
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: spring-boot-k8ssvc
-#spec:
-#  selector:
-#    app: spring-boot-k8s
-#  ports:
-#    - protocol: "TCP"
-#      port: 8080
-#      targetPort: 8080
-#  type: NodePort
+          - containerPort: 84444
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-k8ssvc
+spec:
+  selector:
+    app: spring-boot-k8s
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  type: NodePort
 
 
 
